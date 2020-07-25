@@ -4,6 +4,7 @@ var generateMarkdown = require("./utils/generateMarkdown")
 
 
 // array of questions for user
+const imgFile = fs.readdirSync("./utils/")
 const questions = [
     {
         type: "input",
@@ -59,6 +60,22 @@ const questions = [
         message: "What does the user need to know about contributing to the repo?",
         name: "contributing"
     },
+    {
+        type: "confirm",
+        message: "Would you like to include any pictures with this README?",
+        name: "images"
+    },
+    {
+        when: function(response) {
+            return response.images;
+        },
+            type: "list",
+            message: "Please select which image you would like to include.",
+            choices: imgFile,
+            name: "imgSelect"
+        
+    }
+    
 
 
 ];

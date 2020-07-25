@@ -7,12 +7,12 @@ ${data.description}
 
 ## Table of Contents:
 
-* [Installation] (#installation)
-* [Information] (#info)
-* [License] (#license)
-* [Contributing] (#contributing)
-* [Tests] (#test)
-* [Questions] (#questions)
+* [Installation](##installation)
+* [Information](##info)
+* [License](##license)
+* [Contributing](##contributing)
+* [Tests](##test)
+* [Questions](##questions)
 
 ## Installation
 
@@ -42,6 +42,11 @@ To run tests on the repo, run the following command:
 
 If you have any questions or comments about the repo, please feel free to email me at ${data.email},
 or visit my GitHub to see more of my work at [${data.username}](https://github.com/${data.username})
+
+## Image of Repo
+
+![Image of repo!](./utils/${data.imgSelect})
+
      `;
 }
   
