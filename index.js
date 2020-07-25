@@ -1,4 +1,6 @@
 var inquirer = require("inquirer");
+var fs = require("fs");
+var generateMarkdown = require("./utils/generateMarkdown")
 
 
 // array of questions for user
@@ -10,13 +12,13 @@ const questions = [
     },
     {
         type: "input",
-        message: "What is your email address?",
+        message: "What is your E-mail address?",
         name: "email"
     },
     {
         type: "input",
         message: "What is your project's name?",
-        name: "project"
+        name: "title"
     },
     {
         type: "input",
@@ -39,13 +41,13 @@ const questions = [
         type: "input",
         message: "What command should be run to install dependencies?",
         default: "npm i",
-        name: "command"
+        name: "installation"
     },
     {
         type: "input",
         message: "What command should be run to run tests?",
         default: "npm test",
-        name: "tests"
+        name: "test"
     },
     {
         type: "input",
@@ -55,20 +57,31 @@ const questions = [
     {
         type: "input",
         message: "What does the user need to know about contributing to the repo?",
-        name: "contribute"
+        name: "contributing"
     },
-    
+
 
 ];
-inquirer.prompt(questions)
+
 
 // function to write README file
 function writeToFile(fileName, data) {
+    fs.writeFile(fileName, JSON.stringify(generateMarkdown(data).replace("\"", " "), null, '\n'), function(err) {
+        if(err) {
+            return console.log(err);
+        }
+        console.log('Generating your README...');
+    })   
 }
 
 // function to initialize program
 function init() {
+    inquirer.prompt(questions)
 
+    .then(function(data) {
+        var fileName = "README.md";
+        writeToFile(fileName, data);
+})
 }
 
 // function call to initialize program
