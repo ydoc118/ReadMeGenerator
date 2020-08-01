@@ -2,16 +2,16 @@
 
 
 ## Description:
-Create the perfect README file for your repos!
+Create the hperfect README file for your repos!
 
 ## Table of Contents:
 
-* [Installation](##installation)
-* [Information](##Information)
-* [License](##license)
-* [Contributing](##contributing)
-* [Tests](##Tests)
-* [Questions](##questions)
+* [Installation](#installation)
+* [Information](#Information)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#Tests)
+* [Questions](#questions)
 
 ## Installation
 
@@ -22,6 +22,8 @@ To install all necessary dependencies, run the following command:
 ## Information
 
 Follow the prompts in the terminal to add to your README
+
+Link to video walkthrough: [Here](utils/walkthrough.webm)
 
 ## License
 

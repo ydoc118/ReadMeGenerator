@@ -9,12 +9,12 @@ ${data.description}
 
 ## Table of Contents:
 
-* [Installation](##installation)
-* [Information](##Information)
-* [License](##license)
-* [Contributing](##contributing)
-* [Tests](##Tests)
-* [Questions](##questions)
+* [Installation](#installation)
+* [Information](#Information)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#Tests)
+* [Questions](#questions)
 
 ## Installation
 
@@ -25,6 +25,8 @@ To install all necessary dependencies, run the following command:
 ## Information
 
 ${data.info}
+
+Link to video walkthrough: [${"Here"}](utils/walkthrough.webm)
 
 ## License
 
