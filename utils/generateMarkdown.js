@@ -26,7 +26,7 @@ To install all necessary dependencies, run the following command:
 
 ${data.info}
 
-Link to video walkthrough: [${"Here"}](utils/walkthrough.webm)
+Link to video walkthrough: [${"Here"}](https://drive.google.com/file/d/1JznwIE9pAPbhe0Mm1nvqrKJ9pAb-wEZa/view)
 
 ## License
 
