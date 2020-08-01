@@ -85,7 +85,7 @@ const questions = [
 function writeToFile(fileName) {
     inquirer.prompt(questions)
 
-    .then(function(data) {
+    .then((data) => {
         var markdown = generateMarkdown(data);
         fs.writeFile(fileName, markdown, function(err) {
             if(err) {

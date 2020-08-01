@@ -30,7 +30,7 @@ Link to video walkthrough: [${"Here"}](https://drive.google.com/file/d/1JznwIE9p
 
 ## License
 
-This project is licensed under the ${data.license} license.
+This project is licensed under the ${data.licence} license.
 
 ## Contributing
 
